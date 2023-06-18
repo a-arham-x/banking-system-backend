@@ -3,11 +3,11 @@ const app = express();
 const port = 5000;
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const connectToMongo = require("./utils/db");
+// const connectToMongo = require("./utils/db");
 
 app.use(bodyParser.json())
 
-connectToMongo()
+// connectToMongo()
 
 app.use(cors())
 
