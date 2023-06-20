@@ -6,9 +6,7 @@ const bodyParser = require("body-parser");
 const connectToMongo = require("./utils/db");
 
 app.use(cors({
-    origin: '*',
-    methods: 'GET, POST, PUT, DELETE',
-    allowedHeaders: '*'
+    origin: 'https://banking-system-navy.vercel.app'
   }))
 
 app.use(bodyParser.json())
