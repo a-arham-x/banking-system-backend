@@ -5,11 +5,11 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const connectToMongo = require("./utils/db");
 
+app.use(cors())
+
 app.use(bodyParser.json())
 
 connectToMongo()
-
-app.use(cors())
 
 app.use("/users", require("./routes/users"))
 
